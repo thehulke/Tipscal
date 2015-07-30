@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : Jul 23, 2015, 9:15:17 PM
+    Author     : liorgerstein
+*/
+
+body {
+    margin: 0;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-block {
+    float: none !important
+}
+
+.main-heading {
+    background-image: url('chalkboard.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    border-bottom: 1px solid #70ED65;
+}
+
+.main-page {	
+	margin-top: 0px;
+	position: fixed;
+    width: 100%;
+    min-height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaf4b+0,ffeac6+100 */
+background-color: white;
+}
+
+.main-form {
+	margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    background-color: white;
+}
+
+.show-users-form ul li:first-child {
+    display: none;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 0px;
+}
+
+.btn:hover {
+    background-color: #AEEB95;
+    transition-property: background-color;
+    transition-duration: 0.5s, 0.5s;
+}
+
+.btn:focus {
+    background-color: #AEEB95;
+    outline: none;
+}
+
+.formErrors {
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+
+.show-total-tips {
+	margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+.show-total-tips table tbody tr:first-child {
+    display: none;
+}

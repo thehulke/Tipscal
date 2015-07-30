@@ -1,0 +1,70 @@
+<div class="single-user">
+	<!-- Total cash input -->
+	<div class="form-group">
+		<label class="col-sm-3 control-label" for="totalCash" >Total Cash</label>
+		<div class="col-sm-9">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+				<input class="form-control" name="tCash" id="totalCash" type="number" ng-model="totalCash" placeholder="Total Cash" required="">
+			</div>
+		</div>
+	</div>
+	<!-- Total credit input -->
+	<div class="form-group">
+		<label class="col-sm-3 control-label" for="totalCredit">Total Credit</label>
+		<div class="col-sm-9">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+				<input class="form-control" name="tCredit" type="number" ng-model="totalCredit" placeholder="Total Credit" required>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Show users via list by ng-repeat directive -->
+	<div class="show-users-form">
+		<ul>
+			<li ng-repeat="worker in workers">
+				<h3 class="text-center">{{worker.workerName}}<small> worked {{worker.hours}} hours.</small></h3>
+			</li>
+		</ul>
+	</div>
+	<!-- Name input -->
+	<div class="form-group">
+		<label class="col-sm-3 control-label" for="waitererName">Name</label>
+		<div class="col-sm-9">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				<input class="form-control" name="wName" id="waitererName" type="text" ng-model="tipFormName" placeholder="Name" required="">
+			</div>
+		</div>
+	</div>
+	<!-- hours input -->
+	<div class="form-group">
+		<label class="col-sm-3 control-label" for="waitererHours">Hours</label>
+		<div class="col-sm-9">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+				<input class="form-control" id="waitererHours" type="number" ng-model="tipFormHours" placeholder="Hours" step="0.25">
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- Showing error alerts (if there are some) -->
+	<div class="formErrors">
+		<div ng-show="masterForm.$submitted || masterForm.tCash.$touched">
+			<div class="text-center alert alert-danger" ng-show="masterForm.tCash.$error.required">How much is the total cash?</div>
+		</div>
+		<div ng-show="masterForm.$submitted || masterForm.tCredit.$touched">
+			<div class="text-center alert alert-danger" ng-show="masterForm.tCredit.$error.required">How much is the total credit?</div>
+		</div>
+	</div>
+	<!-- Form buttons -->
+	<div class="btn-group btn-group-justified" role="group">
+		<div class="btn-group" role="group">
+			<input class="btn btn-default" type="submit" ng-click="addUser()" value="Add User">
+		</div>
+		<div class="btn-group" role="group">
+			<input class="btn btn-default" type="button" ng-click="calculateTips()" value="Calculate">
+		</div>
+	</div>
+</div>
