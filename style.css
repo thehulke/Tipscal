@@ -34,11 +34,15 @@ body {
 
 .main-page {
 	margin-top: 0px;
+<<<<<<< HEAD
     width: 100%;
     min-height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaf4b+0,ffeac6+100 */
 background-color: white;
 padding-bottom: 15px;
+=======
+
+>>>>>>> FETCH_HEAD
 }
 
 .main-form {
