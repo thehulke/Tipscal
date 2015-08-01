@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Tipcal">
         <meta name="author" content="Lior G">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="../../favicon.ico">
         <title>Tipcal - Tip Calculator</title>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,7 +24,7 @@ and open the template in the editor.
     </head>
     <!-- Starting -->
     <body ng-app="tipcalForm">
-        
+
         <div class="jumbotron main-heading">
             <h1 class="text-center">Tipcal</h1>
             <p class="text-center">Calculate your tips in the form down below</p>
@@ -32,13 +33,13 @@ and open the template in the editor.
             <div ng-controller="mainForm">
                 <div class="container">
                     <div class="row">
-                        
+
                         <div class="col-md-5 main-form center-block" ng-show="TipFormShow">
-                            
+
                             <form name="masterForm" class="tipForm form-horizontal" novalidate>
                                 <name-hours></name-hours>
                             </form>
-                            
+
                         </div>
                     </div>
                     <div class="row">
