@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 
 
-/* 
+/*
     Created on : Jul 23, 2015, 9:15:17 PM
     Author     : liorgerstein
 */
@@ -32,13 +32,13 @@ body {
     border-bottom: 1px solid #70ED65;
 }
 
-.main-page {	
+.main-page {
 	margin-top: 0px;
-	position: fixed;
     width: 100%;
     min-height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaf4b+0,ffeac6+100 */
 background-color: white;
+padding-bottom: 15px;
 }
 
 .main-form {
@@ -47,6 +47,7 @@ background-color: white;
     border: 1px solid #CCCCCC;
     padding: 10px;
     background-color: white;
+    margin-bottom: 15px;
 }
 
 .show-users-form ul li:first-child {
@@ -61,7 +62,9 @@ ul li {
     list-style: none;
     margin-left: 0px;
 }
-
+.btn-exclude{
+  margin-bottom: 15px;
+}
 .btn:hover {
     background-color: #AEEB95;
     transition-property: background-color;

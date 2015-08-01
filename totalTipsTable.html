@@ -1,27 +1,39 @@
 <div class="show-total-tips">
-	
-	<h3 class="text-center">{{date | date:'dd-MM-yyyy'}}</h3>
-	<p class="text-center">Total cash: {{totalCash}}</p>
-	<p class="text-center">Total credit: {{totalCredit}}</p>
-	<p class="text-center">Total money: {{totalCash + totalCredit}}</p>
-	<p class="text-center">Total hours: {{totalHours}}</p>
-	<p class="text-center">Money / hour: {{(totalCash + totalCredit)/totalHours}}</p>
-	<table class="table table-striped">
-		<thead>
-			<th>Name</th>
-			<th>Hours</th>
-			<th>Cash</th>
-			<th>Credit</th>
-			<th>Total</th>
-		</thead>
-		<tbody>
-			<tr ng-repeat="totalTip in totalTips">
-				<td>{{totalTip.workerName}}</td>
-				<td>{{totalTip.hours}}</td>
-				<td>{{totalTip.cash}}</td>
-				<td>{{totalTip.credit}}</td>
-				<td>{{totalTip.total}}</td>
-			</tr>
-		</tbody>
-	</table>
+
+  <h3 class="text-center">{{date | date:'dd-MM-yyyy'}}</h3>
+  <div ng-show="showExclude">
+    <p class="text-center">Excluded tips from
+      {{excluded}}
+      -
+      {{moneyToExclude}}</p>
+  </div>
+
+  <p class="text-center">Total cash:
+    {{totalCash}}</p>
+  <p class="text-center">Total credit:
+    {{totalCredit}}</p>
+  <p class="text-center">Total money:
+    {{totalCash + totalCredit}}</p>
+  <p class="text-center">Total hours:
+    {{totalHours}}</p>
+  <p class="text-center">Money / hour:
+    {{(totalCash + totalCredit)/totalHours}}</p>
+  <table class="table table-striped">
+    <thead>
+      <th>Name</th>
+      <th>Hours</th>
+      <th>Cash</th>
+      <th>Credit</th>
+      <th>Total</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="totalTip in totalTips">
+        <td>{{totalTip.workerName}}</td>
+        <td>{{totalTip.hours}}</td>
+        <td>{{totalTip.cash}}</td>
+        <td>{{totalTip.credit}}</td>
+        <td>{{totalTip.total}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
