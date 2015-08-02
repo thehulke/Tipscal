@@ -1,5 +1,4 @@
 # Tipscal
-Rapid tip calculator
 Hello, 
 
 I have written a "Tip Calculator" for those of you who like to finih their shift a bit earlier ;)
