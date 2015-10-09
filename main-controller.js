@@ -12,6 +12,8 @@ tipForm.controller('mainForm', ['$scope', function($scope) {
   $scope.totalCredit;
   $scope.totalHours = 0;
   $scope.workers = [{}];
+
+  // Entire tip exclude feature
   $scope.toExclude = 0;
   $scope.showExclude = false;
   $scope.setToExclude;
@@ -50,6 +52,7 @@ tipForm.controller('mainForm', ['$scope', function($scope) {
       $scope.tipFormHours = 0;
     } // building the calculator (on progress)
   $scope.calculateTips = function() {
+    // Setting up exculde switch
     if ($scope.toExclude) {
       switch ($scope.toExclude) {
         case 1:
